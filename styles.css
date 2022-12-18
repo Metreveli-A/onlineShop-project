@@ -1,0 +1,264 @@
+#logo{
+    position: relative;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display:flex;
+    border-right-style:solid;
+    border-right-width: 2px;
+    margin:1% 2%;
+}
+nav.nav-1{
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+   margin: 0% 0%;
+   background-color: rgb(132, 155, 106);
+   height: 90px;
+   
+}
+.nav-list, ul, li, a{
+   position: relative;
+    display: flex;
+    font-size: 20px;
+    color: rgb(10, 10, 10); 
+    text-decoration: none;
+    margin: 1% 24%;
+    text-align: center;
+   
+}
+ul li a{
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(229, 247, 248);
+    margin: 50px;
+
+}
+
+.footers{
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px rgb(43, 53, 83);
+    margin: 20px;
+    transition-duration: 0.2 s;
+}
+.footers:hover{
+    box-shadow: 1px  1px  15px rgb(17, 120, 155);
+    transform: scale(1.1); 
+    transition-duration: 0.4s;
+}
+a:hover, button:hover{
+    box-shadow: 1px  1px  15px rgb(3, 3, 3);
+    text-decoration: underline;
+    color: rgb(6, 123, 219) !important;
+    border: rgb(54, 140, 173) solid !important;
+    text-decoration: none;
+}
+#theButton{
+ width: 100px;
+    color: rgb(9, 10, 10);
+   background-color: gray;
+   margin: 10px;
+}
+button{
+    border: solid 1px  rgb(14, 15, 15);
+    border-radius: 10px;
+    padding: 10px;
+    margin:5px;
+    background-color: aqua;
+    width: 100px;
+}
+.btn, btn-info{
+    margin: 5px;
+    padding: 10px;
+   width: 150px;
+   
+}
+.btn,  btn-primary{
+    border: solid 1px  rgb(238, 8, 8);
+    margin:10px;
+    width: 250px;
+    color: #000;
+ 
+}
+table{
+    position: relative;
+    border: solid 1px darkcyan ;
+    display:flexbox;  
+    margin: 0%  0%;
+
+}
+.nameFilter{
+    display: flex;
+    justify-content: space-between;
+}
+.highlight{
+  color: red; 
+  font-size: 30px;
+  border:solid 2px darkgoldenrod;
+  transform: rotate(45deg);
+  transition: 0.5s; 
+  border-radius: 10px;
+  padding: 10px;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+button.btn.btn-primary{
+    color: #000;
+    background-color: aqua;
+}
+button.btn.btn-primary:hover{
+    box-shadow: 1px  1px  15px rgb(22, 16, 16);
+    text-decoration: underline;
+    color: rgb(6, 123, 219) !important;
+    border: rgb(54, 140, 173) solid !important;
+}
+.edit{
+    background-color: gray;
+}
+.edit:hover{
+    box-shadow: 2px  2px  25px rgb(78, 206, 62);
+    text-decoration: none;
+    color: rgb(10, 14, 11) !important;
+    border: rgb(59, 104, 51) solid !important;
+    background: rgb(73, 177, 61)  !important;
+}
+.delete{
+    background-color: rgb(158, 6, 6);
+}
+.delete:hover{
+    box-shadow: 2px  2px  25px rgb(38, 126, 226);
+    text-decoration: none;
+    color: rgb(10, 14, 11) !important;
+    border: rgb(23, 69, 138) solid !important;
+    background: rgb(32, 93, 109)  !important;
+}
+button.btn.btn-secondary{
+    color: #000;
+    background-color: aqua;
+}
+
+th:hover{
+   
+    color:blueviolet ;
+    background-color: aqua;
+}
+#productsTable{
+    overflow: hidden;
+}
+tr:hover{
+background-color: aquamarine !important;
+color: red;
+}
+td:hover{
+   
+    color:blueviolet ;
+    background-color: aqua;
+}
+.rotated{
+    transform: rotate(45deg);
+    transition-duration: 1s;
+}
+
+.stress
+{
+    border: black solid 5px;
+
+}
+table{
+    border: solid 5px gray !important;
+
+}
+tr{
+    border: rgb(124, 112, 82) solid 3px !important;
+    
+}
+
+
+ #copy{
+    position: relative;
+    width: 150px;
+    background-color: gray;
+ }
+ #filter{
+    color:rgb(9, 10, 10);
+    background-color: gray;  
+    width: 120px;
+    height: 50px;
+    margin: 5px 5px;
+    padding: 10px 10px;
+ 
+ }
+#filter:hover{
+    box-shadow: 2px  2px  25px rgb(78, 206, 62);
+    text-decoration: none;
+    color: rgb(10, 14, 11) !important;
+    border: rgb(59, 104, 51) solid !important;
+    background: rgb(73, 177, 61)  !important;
+}
+#toggle-div{
+   display: flex;
+    color:rgb(9, 10, 10);  
+    width: 150px;
+    height: 50px;
+  margin: 4% 0%;
+  justify-content: space-between;
+}
+form{
+    margin-left: -350%;
+    padding: 10% 10%;
+    font-size: 15px;
+    font-weight: 600;
+    height: 70px;
+    margin: 5px;
+}
+#apply{
+    margin: 1px 5px;
+    height: 40px;
+    width: 90px;
+    background-color: gray;
+}
+#apply:hover{
+    box-shadow: 2px  2px  25px rgb(78, 206, 62);
+    text-decoration: none;
+    color: rgb(10, 14, 11) !important;
+    border: rgb(59, 104, 51) solid !important;
+    background: rgb(73, 177, 61)  !important;
+}
+#copy:hover{
+    box-shadow: 2px  2px  25px rgb(78, 206, 62);
+    text-decoration: none;
+    color: rgb(10, 14, 11) !important;
+    border: rgb(59, 104, 51) solid !important;
+    background: rgb(73, 177, 61)  !important;
+}
+#copy1{
+    color:rgb(9, 10, 10);
+    background-color: gray;  
+    width: 120px;
+    height: 50px;
+    margin: 5px 5px;
+    position: relative;
+    text-decoration: none;
+}
+ #copy1:hover{
+  
+    box-shadow: 2px  2px  25px rgb(78, 206, 62);
+    color: rgb(10, 14, 11) !important;
+    border: rgb(59, 104, 51) solid !important;
+    background: rgb(73, 177, 61)  !important;
+    width: 150px;
+    height: 50px;
+}
+
+

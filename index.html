@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Competible" content="IE-edge">
+        <title>HTML + Javascript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale">
+     <link  rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="main.js" defer></script>
+     <script src="js/jquery-3.6.1.js"></script>
+     <!-- <script  src="js/css/toastr.min.css"></script>
+     <script src="js/css/toastr.min.css"></script> -->
+   
+    </head>
+    <body>
+    <nav class="nav-1">
+        <div id="logo">
+                OnlineShopAdmin 
+            </a>
+        </div>
+        <div class="nav-list">
+        <ul>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="Customers.html">Customers</a></li>
+            <li><a href="Orders.html">Orders</a></li>
+            <li><a href="Reports.html">Reports</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="nameFilter"  style="display: flex;
+    margin:0px; padding:0px;justify-content: space-between;">
+        <h1  style="margin: 10px;">Products</h1>
+
+  
+
+   <div  id="toggle-div" >
+    <form  style="display:flex; justify-content:space-between;">
+
+    Product Name:<input type="text" id="name"  style=" border: #000 solid 2px;">
+
+    Series:<input type="text" id="series"  style=" border: #000 solid 2px;">
+  
+    Any<input type="text" id="any"  style=" border: #000 solid 2px;">
+    <button id="apply" >Apply</button>
+
+</form>
+   </div>
+   <div  id="toggle-div3" >
+   <button  type="button" id="filter" onclick="myFunction2()"> Show Filter</button> 
+   
+   </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+        
+
+<!-- ეს ეკუთვნის ღილაკი create table ----11 -->
+    <table  id="productsTable" class="table table-bordered table-striped ">
+        <tr>
+            <th> Product Name </th>
+            <th> Product Number</th>
+            <th>Color</th>
+            <th>List Price</th> 
+            <th>Modified Date</th> 
+            <th>Actions</th> 
+    </tr>
+        <tr>
+            <td column="name" >HL Road Frame-Black,58</td>
+            <td  column="series" >FR-R92B-58</td>
+            <td column="color" >Black</td>
+            <td column="price" >900</span>kg.</td>
+            <td column="date" >11 November 2021</td>
+            <td >
+            <button   id="theButton"   class="edit">Edit</button>
+            <button type="button" class="delete"  onclick="selectRowToInPut();">Delete</button> </td>
+            </tr>
+        <tr>
+            <td column="name">HL Road Frame-Black,58</td>
+            <td  column="series">FR-R92B-58</td>
+            <td column="color">Black</td>
+            <td column="price">900</span>kg.</td>
+            <td column="date">11 November 2021</td>
+            <td ><button type="button" id="theButton"   class="edit" onclick="edidHtmlSelectedRow();">Edit</button>
+                <button type="button" class="delete"  onclick="selectRowToInPut();">Delete</button> </td>
+        </tr>
+        <tr>
+            <td column="name">HL Road Frame-Black,58</td>
+            <td  column="series">FR-R92B-58</td>
+            <td column="color">Black</td>
+            <td column="price">900</span>kg.</td>
+            <td column="date">11 November 2021</td>
+            <td ><button type="button"  id="theButton"    class="edit" onclick="edidHtmlSelectedRow();">Edit</button>
+                <button type="button" class="delete" onclick="selectRowToInPut();">Delete</button> </td>
+        </tr>
+        <tr>
+            <td column="name">HL Road Frame-Black,58</td>
+            <td  column="series">FR-R92B-58</td>
+            <td column="color">Black</td>
+            <td column="price">900</span>kg.</td>
+            <td column="date">11 November 2021</td>
+            <td ><button type="button" id="theButton"    class="edit" onclick="edidHtmlSelectedRow();">Edit</button>
+                <button type="button" class="delete" onclick="selectRowToInPut();">Delete</button> </td>
+        </tr>
+        <tr>
+            <td column="name">HL Road Frame-Black,58</td>
+            <td  column="series">FR-R92B-58</td>
+            <td column="color">Black</td>
+            <td column="price">900</span>kg.</td>
+            <td column="date">11 November 2021</td>
+            <td ><button type="button" id="theButton"  class="edit" onclick="edidHtmlSelectedRow();">Edit</button>
+                <button type="button" class="delete" onclick="selectRowToInPut();">Delete</button> </td>
+        </tr>
+        <tr>
+            <td column="name">HL Road Frame-Black,58</td>
+            <td  column="series">FR-R92B-58</td>
+            <td column="color">Black</td>
+            <td column="price">900</span>kg.</td>
+            <td column="date">11 November 2021</td>
+            <td ><button type="button" id="theButton"  class="edit" onclick="edidHtmlSelectedRow();">Edit</button>
+                <button type="button" class="delete" onclick="selectRowToInPut();">Delete</button> </td>
+        </tr>
+        <tr>
+            <td column="name">HL Road Frame-Black,58</td>
+            <td  column="series">FR-R92B-58</td>
+            <td column="color">Black</td>
+            <td column="price">900</span>kg.</td>
+            <td column="date">11 November 2021</td>
+            <td ><button type="button" id="theButton"  class="edit" onclick="edidHtmlSelectedRow();">Edit</button>
+                <button type="button" class="delete" onclick="selectRowToInPut();" >Delete</button> </td>
+        </tr>
+        <tr>
+            <td column="name">HL Road Frame-Black,58</td>
+            <td  column="series">FR-R92B-58</td>
+            <td column="color">Black</td>
+            <td column="price">900</span>kg.</td>
+            <td column="date">11 November 2021</td>
+            <td ><button type="button" id="theButton" class="edit" onclick="edidHtmlSelectedRow();">Edit</button>
+                <button type="button" class="delete" onclick="selectRowToInPut();">Delete</button> </td>
+        </tr>
+
+     </table>
+
+
+     <!-- <div class="tab" id="toggle-div2" style="display:grid; ">
+     <form2>
+       Product Name <input type="text"  name="fname" id="fname"> 
+        Product Number<input type="number"  name="fname" id="fname">
+       Color <input type="text"  name="fname" id="fname">
+       List Price <input type="number"  name="fname" id="fname">
+        Modified Date<input type="number"  name="fname" id="fname">
+        </form2> -->
+        
+        <!-- <div class="tab" id="table1"> -->
+            
+       
+            <form2>
+              Product Name :<input type="text"   id="fname"> 
+               Product Number:<input type="number"   id="numb">
+              Color:<input type="text"   id="color">
+              List Price: <input type="number"  id="price">
+               Modified Date:<input type="date"  id="date">
+              
+               <button  onclick="addHtmlTableRow()" label for="addHtmlTableRow"> Add Product</label>
+               
+               </button>
+               </form2>
+               <a   id="copy1">Add Products</a>
+       
+    
+    </div>
+
+   
+    
+     
+     <div class="footers" style="display:flex;">
+     <footer id="footer" 
+     style="display:flex; margin: 0% 0%;font-size: 20px;">
+        &copy; 2022 - Online Shop Admin -
+     </footer>
+     <a href ="https://automattic.com/privacy/"   target="_blank" style="color:black;margin: 0%;">Privacy</a>
+     </div>
+    
+
+
+</body>
+</html>
+
